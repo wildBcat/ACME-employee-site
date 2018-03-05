@@ -1,0 +1,26 @@
+﻿@model WebApplication8.Models.Job_Title
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Job_Title</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Tob_Title)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tob_Title)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Job_Title_ID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
